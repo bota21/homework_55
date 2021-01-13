@@ -1,0 +1,17 @@
+.wrapper{
+    padding: 20px;
+    border: 1px solid #000;
+    margin-top: 14px;
+}
+.price{
+    margin-top: 100px;
+    text-align: center;
+}
+.price h2{
+    margin: 0;
+}
+.cost{
+    font-size: 25px;
+    font-weight: 900;
+    margin: 10px;
+}
