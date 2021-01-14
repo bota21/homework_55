@@ -1,12 +1,11 @@
 
+import { useState } from 'react';
 import './App.css';
-import Form from './Form/Form';
-import ListWrapper from './List_wrapper/ListWrapper';
+import ListWrapper from './container/List_wrapper/ListWrapper';
 
 function App() {
   return (
     <div className="App">
-    <Form />
     <ListWrapper />
     </div>
     );

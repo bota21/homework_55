@@ -1,13 +1,13 @@
 .wrapper{
-    padding: 20px;
+    padding: 14px;
     border: 1px solid #000;
-    margin-top: 14px;
+    margin-top: 10px;
 }
-.price{
+.general{
     margin-top: 100px;
     text-align: center;
 }
-.price h2{
+.general h2{
     margin: 0;
 }
 .cost{
