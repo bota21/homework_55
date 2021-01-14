@@ -31,15 +31,26 @@ const ListWrapper = () => {
         let copyList = [...list];
         copyList.splice(index, 1);
         setList(copyList);
+        let newPrice;
+        copyList.map(item => {
+            newPrice = totalPrice - item.price;
+        })
+        setTotalPrice(newPrice)
     };
     
     let addList = (e, id) => {
-        // const index = list.findIndex(l => l.id === id);
+        e.preventDefault();
         let copyList = [...list];
         copyList.push({id: uuidv4(), text: newList[-1].name, price: newList[-1].price});
         setList(copyList);
-        let newPrice = copyList.price + totalPrice;
-        console.log(copyList);
+        let newPrice = copyList.map(item => {
+        return item.price
+        })
+        .reduce((acc, num) => {
+            num = parseInt(num);
+            acc = parseInt(totalPrice + num);
+            return acc
+        })
         setTotalPrice(newPrice)
     };
     
